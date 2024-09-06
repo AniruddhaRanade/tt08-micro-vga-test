@@ -16,16 +16,10 @@ module tt_um_micro_vga_test (
   wire [9:0] pix_x;
   wire [9:0] pix_y;
 
-  // Configuration
-  // wire cfg_tile = ui_in[0];
-  // wire cfg_color = ui_in[1];
-
   // TinyVGA PMOD
   assign uo_out  = {hsync, B[0], G[0], R[0], vsync, B[1], G[1], R[1]};
 
   wire _unused_ok = &{ui_in};
-
-  // reg [9:0] prev_y;
 
   vga_sync_generator vga_sync_gen (
       .clk(clk),
