@@ -8,7 +8,7 @@
 
 `default_nettype none
 
-module tt_um_micro_test (
+module tt_um_micro_vga_test (
     input  wire [7:0] ui_in,    // Dedicated inputs
     output wire [7:0] uo_out,   // Dedicated outputs
     input  wire       clk,      // clock
