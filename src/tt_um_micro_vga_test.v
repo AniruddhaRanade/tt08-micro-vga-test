@@ -33,7 +33,7 @@ module tt_um_micro_vga_test (
 
   // reg [9:0] prev_y;
 
-  hvsync_generator vga_sync_gen (
+  vga_sync_generator vga_sync_gen (
       .clk(clk),
       .reset(~rst_n),
       .hsync(hsync),
